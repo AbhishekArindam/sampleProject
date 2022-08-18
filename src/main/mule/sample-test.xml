@@ -129,13 +129,7 @@ output application/json
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
 ---
-[
-  {
-    userName: "Abhishek",
-    id: 123456,
-    Email: "AbhishekArindam@gmail.com"
-  }
-]]]></ee:set-payload>
+payload]]></ee:set-payload>
             </ee:message>
         </ee:transform>
     </flow>
