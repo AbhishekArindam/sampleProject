@@ -46,23 +46,7 @@
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
-			<plugin>
-			  <groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-			<configuration>
-             <cloudHubDeployment>
-<uri>https://anypoint.mulesoft.com</uri>
-<muleVersion>4.3.0</muleVersion>
-<username>your_anypoint_user</username>
-<password>anypoint_password</password>
-<applicationName>CICD-Test</applicationName>
-<environment>Sandbox</environment>
-<workers>1</workers>
-<workerType>Micro</workerType>
-<objectStoreV2>true</objectStoreV2>
-</cloudHubDeployment>
-</configuration>
-        </plugin>
+			
 		</plugins>
 	</build>
 
@@ -102,16 +86,6 @@
 		</repository>
 	</repositories>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>mulesoft-releases</id>
-			<name>MuleSoft Releases Repository</name>
-			<layout>default</layout>
-			<url>https://repository.mulesoft.org/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+	
 
 </project>
